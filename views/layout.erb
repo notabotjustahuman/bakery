@@ -9,6 +9,16 @@
     <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
   </head>
   <body>
+    <div class="tablist" id='navbar'>
+      <button id="OpenFirst" class="tablinks" onclick="openTab(event, 'Home')">Home</button>
+      <button class="tablinks" onclick="openTab(event, 'Muffins')">Muffins</button>
+      <button class="tablinks" onclick="openTab(event, 'Cookies')">Cookies</button>
+      <button class="tablinks" onclick="openTab(event, 'Cupcakes')">Cupcakes</button>
+      <button class="tablinks" onclick="openTab(event, 'Cakes')">Cakes</button>
+      <button class="tablinks" onclick="openTab(event, 'Crêpes')">Crêpes</button>
+      <button class="tablinks" onclick="openTab(event, 'Events')">Events</button>
+      <button class="tablinks" onclick="openTab(event, 'OurPartners')">Our Partners</button>
+    </div>
 
     <%= yield %>
   </body>
