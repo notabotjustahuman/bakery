@@ -9,10 +9,17 @@ h1 {
 
 h2 {
   font-family: 'Caveat', cursive;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 500;
   text-align: center;
   margin: 4px;
+}
+
+h3 {
+  font-family: 'Caveat', cursive;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
 }
 
 #navbar {
@@ -33,13 +40,13 @@ h2 {
   float: none;
   margin: 0 auto;
   border: none;
-  border-radius: 20px;
+  border-radius: 22px;
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
   font-family: 'Caveat', cursive;
-  font-size: 25px;
+  font-size: 28px;
   font-weight: 400;
 }
 
@@ -60,4 +67,16 @@ h2 {
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity: 1;}
+}
+
+#menu {
+  justify-content: center;
+  display: grid;
+  grid-template: 350px / auto auto auto;
+  grid-gap: 6%;
+}
+
+.food {
+  width: 200px;
+  height: 200px;
 }
