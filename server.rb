@@ -10,7 +10,7 @@ class Muffin
   end
 end
 
-class Coookie
+class Cookie
   attr_accessor :name, :description, :price
   def initialize(name,description,price)
     @name = name
@@ -37,7 +37,7 @@ class Cake
   end
 end
 
-class Crepes
+class Crepe
   attr_accessor :name, :description, :price
   def initialize(name,description,price)
     @name = name
