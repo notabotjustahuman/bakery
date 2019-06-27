@@ -13,6 +13,10 @@ end
 muffin1 = Muffin.new("Peanut Butter Nutella", "Savory Nutella swirl with creamy peanut butter", "Price: $3.95")
 
 get "/" do
+  redirect "/home"
+end
+
+get "/home" do
   erb :home
 end
 

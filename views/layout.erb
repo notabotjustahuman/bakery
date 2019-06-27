@@ -4,20 +4,25 @@
     <meta charset="utf-8">
     <title>Honey Heaven</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="main.css">
     <link rel="icon" href="https://dumielauxepices.net/sites/default/files/honey-clipart-emoji-641652-2912513.png" type="image" sizes="16x16">
     <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <style>
+      #<%=(request.path).gsub(/\W/, "")%> {
+        background-color: #f7b616;
+      }
+    </style>
   </head>
   <body>
     <div class="tablist" id='navbar'>
-      <a href="/"><button class="tablinks">Home</button></a>
-      <a href="muffins"><button class="tablinks">Muffins</button></a>
-      <a href="cookies"><button class="tablinks">Cookies</button></a>
-      <a href="cupcakes"><button class="tablinks">Cupcakes</button></a>
-      <a href="cakes"><button class="tablinks">Cakes</button></a>
-      <a href="crepes"><button class="tablinks">Crêpes</button></a>
-      <a href="events"><button class="tablinks">Events</button></a>
-      <a href="partners"><button class="tablinks">Our Partners</button></a>
+      <a href="home"><button id="home" class="tablinks">Home</button></a>
+      <a href="muffins"><button id="muffins" class="tablinks">Muffins</button></a>
+      <a href="cookies"><button id="cookies"class="tablinks">Cookies</button></a>
+      <a href="cupcakes"><button id="cupcakes" class="tablinks">Cupcakes</button></a>
+      <a href="cakes"><button id="cakes"class="tablinks">Cakes</button></a>
+      <a href="crepes"><button id="crepes"class="tablinks">Crêpes</button></a>
+      <a href="events"><button id="events"class="tablinks">Events</button></a>
+      <a href="partners"><button id="partners"class="tablinks">Partners</button></a>
     </div>
 
     <%= yield %>
