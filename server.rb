@@ -55,7 +55,7 @@ end
 muffin1 = Muffin.new("Peanut Butter Nutella", "Savory Nutella Swirl with Creamy Peanut Butter ", "Price: $4.95", "https://www.somethingswanky.com/wp-content/uploads/2016/06/DSC_4179-620x936.jpg")
 muffin2 = Muffin.new("Blueberry & Cranberry", "Sweet Berries with Glazed Crumbs", "Price: $4.95", "https://tastykitchen.com/recipes/wp-content/uploads/sites/2/2012/02/Blueberry-and-Cranberry-Crumb-Muffin-410x615.jpg")
 muffin3 = Muffin.new("Glazed Apple Crumb", "Cinnamon Apple with Vanilla Icing", "Price: $4.95", "https://www.katheats.com/wp-content/uploads/2015/09/Glazed-Apple-Crumb-Muffins-11.jpg")
-muffin4 = Muffin.new
+muffin4 = Muffin.new("Double Chocolate")
 muffin5 = Muffin.new
 muffin6 = Muffin.new
 
