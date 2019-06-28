@@ -29,9 +29,26 @@ h3 {
   height: 55px;
 }
 
+h4 {
+  font-family: 'Caveat', cursive;
+  font-size: 28px;
+  font-weight: bolder;
+  text-align: center;
+  margin: 5px;
+  text-shadow: 1px 1px #FFCC4D;
+}
+
+p {
+  font-family: 'Caveat', cursive;
+  font-size: 24px;
+  font-weight: bolder;
+  text-align: center;
+  margin: 5px;
+}
+
 #Logo {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -87,11 +104,13 @@ h3 {
   justify-content: center;
   display: grid;
   grid-template: 455px / 305px 305px 305px;
-  grid-gap: 1%;
+  grid-gap: 3.5%;
 }
 
 .food {
   display: block;
+  margin-top: 40px;
+  margin-bottom: 25px;
   margin-left: auto;
   margin-right: auto;
   height: 300px;

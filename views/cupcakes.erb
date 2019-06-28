@@ -1,18 +1,14 @@
 <div id="Cupcakes Open" class="tabcontent">
   <h1>Cupcakes</h1>
   <h2>Heavenly morsels of goodness!</h2>
-    <section id="menu">
+  <section id="menu">
+    <% for i in (0..2) do %>
       <div class="menuItem">
-        <h3>Chocolate Chip Cookie Dough</h3>
-        <img class="food" src="https://www.mybakingaddiction.com/wp-content/uploads/images/Final.jpg">
+        <h3><%= @cupcakes[i].name %></h3>
+        <img class="food" src="<%= @cupcakes[i].img %>">
+        <h4><%= @cupcakes[i].description %></h4>
+        <p><%= @cupcakes[i].price %></p>
       </div>
-      <div class="menuItem">
-        <h3>Red Velvet Cheesecake</h3>
-        <img class="food" src="https://therecipecritic.com/wp-content/uploads/2017/01/RedVelvetCupcakes2-667x1000.jpg">
-      </div>
-      <div class="menuItem">
-        <h3>Cinnamon Buttercream Snickerdoodle</h3>
-        <img class="food" src="https://i.pinimg.com/originals/4d/87/2f/4d872f218fe890b974685b7e041d6887.jpg">
-      </div>
+    <% end %>
   </section>
 </div>
