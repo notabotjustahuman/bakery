@@ -1,3 +1,12 @@
-<div id="Events" class="tabcontent">
-  <h1>Events</h1>
-</div>
+<h1>Join Baking Events!</h1>
+  <section>
+    <% for i in (0..7) do %>
+      <div class="events">
+        <h5><%= @events[i]['name']['text'] %></h5>
+        <img class="events-pic" src="<%= @events[i]['logo']['original']['url'] %>">
+        <p><%= @events[i]['description']['text'] %></p>
+        <a class="eventLink" href="<%= @events[i]['url'] %>">Click For More Info</a>
+        <hr>
+      </div>
+    <% end %>
+  </section>

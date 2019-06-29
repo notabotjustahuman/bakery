@@ -8,7 +8,7 @@ h1 {
   font-weight:bolder;
   text-align: center;
   text-shadow: 3px 3px #FFCC4D;
-  margin: 4px;
+  margin: 15px;
 }
 
 h2 {
@@ -40,18 +40,31 @@ h4 {
 
 p {
   font-family: 'Caveat', cursive;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bolder;
   text-align: center;
   margin: 5px;
+  padding-top: 8px;
 }
 
-#Logo {
+.eventLink {
+  text-decoration: none;
+  text-align: center;
+}
+
+#logo {
   width: 250px;
   height: 250px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+#logoContainer {
+  display: grid;
+  grid-template: 250px / 250px 250px;
+  justify-content: center;
+}
+
+.bee {
+  transform: rotate(45deg);
 }
 
 #navbar {
@@ -92,7 +105,7 @@ p {
 
 .tabcontent {
   padding: 6px 12px;
-  animation: fadeIn 1.7s;
+  animation: fadeIn 2s;
 }
 
 @keyframes fadeIn {
@@ -100,11 +113,40 @@ p {
   to {opacity: 1;}
 }
 
+#topButton {
+  display: none;
+  background-color: #F5900C;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 35px;
+  right: 30px;
+  transition: background-color .4s;
+  z-index: 99;
+}
+
+#topButton::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-size: 28px;
+  line-height: 50px;
+  color: #fff;
+}
+
+#topButton:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
 #menu {
-  justify-content: center;
   display: grid;
-  grid-template: 455px / 305px 305px 305px;
+  grid-template: 550px 550px / 305px 305px 305px;
   grid-gap: 3.5%;
+  justify-content: center;
+  padding-bottom: 175px;
 }
 
 .food {
@@ -115,6 +157,24 @@ p {
   margin-right: auto;
   height: 300px;
   padding: 1px;
+  border-radius: 12px;
+  border: 1px solid #f7b616;
+  background-color: black;
+}
+
+.events {
+  display: block;
+  grid-template: auto auto auto auto auto / 500px;
+  grid-gap: 80px;
+  text-align: center;
+}
+
+.events-pic {
+  display: block;
+  width: 400px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 12px;
   border: 1px solid #f7b616;
   background-color: black;

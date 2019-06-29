@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="https://dumielauxepices.net/sites/default/files/honey-clipart-emoji-641652-2912513.png" type="image" sizes="16x16">
     <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="main.css">
     <style>
       #<%=(request.path).gsub(/\W/, "")%> {
@@ -25,6 +26,10 @@
       <a href="partners"><button id="partners"class="tablinks">Partners</button></a>
       <a href="form"><button id="form"class="tablinks">form</button></a>
     </div>
+    <div>
+      <button onclick="toTopFunction()" id="topButton"</button>
+    </div>
+
 
     <%= yield %>
   </body>

@@ -1,14 +1,14 @@
-<div id="Cupcakes Open" class="tabcontent">
+<div id="Cupcakes" class="tabcontent">
   <h1>Cupcakes</h1>
   <h2>Heavenly morsels of goodness!</h2>
-  <section id="menu">
-    <% for i in (0..2) do %>
-      <div class="menuItem">
-        <h3><%= @cupcakes[i].name %></h3>
-        <img class="food" src="<%= @cupcakes[i].img %>">
-        <h4><%= @cupcakes[i].description %></h4>
-        <p><%= @cupcakes[i].price %></p>
-      </div>
-    <% end %>
-  </section>
+    <section id="menu">
+      <% for i in (0..5) do %>
+        <div class="menuItem">
+          <h3><%= @cupcakes[i].name %></h3>
+          <img class="food" src="<%= @cupcakes[i].img %>">
+          <h4><%= @cupcakes[i].description %></h4>
+          <p><%= @cupcakes[i].price %></p>
+        </div>
+      <% end %>
+    </section>
 </div>
