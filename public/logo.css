@@ -1,0 +1,16 @@
+@import "main.css";
+
+#logo {
+  width: 250px;
+  height: 250px;
+}
+
+#logoContainer {
+  display: grid;
+  grid-template: 250px / 250px 250px;
+  justify-content: center;
+}
+
+.bee {
+  transform: rotate(45deg);
+}

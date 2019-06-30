@@ -1,0 +1,99 @@
+@import "main.css";
+
+#navbar {
+  text-align: center;
+  margin: 0 auto;
+  width: 96%;
+}
+
+.tablist {
+  overflow: hidden;
+  border-radius: 22px;
+  border: 1px solid black;
+  background-color: #FFCC4D;
+}
+
+.tablist button {
+  background-color: inherit;
+  float: none;
+  margin: 0 auto;
+  border: none;
+  border-radius: 22px;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-family: 'Caveat', cursive;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.tablist button:hover {
+  background-color: #fac032;
+}
+
+.tablist button.active {
+  background-color: #f7b616;
+}
+
+.tabcontent {
+  padding: 6px 12px;
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* top button */
+
+#topButton {
+  display: none;
+  background-color: #F5900C;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 35px;
+  right: 30px;
+  transition: background-color .4s;
+  z-index: 99;
+}
+
+#topButton::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-size: 28px;
+  line-height: 50px;
+  color: #fff;
+}
+
+#topButton:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+/* read more button */
+
+#more {
+  display: none;
+}
+
+#readMore {
+  border: none;
+  border-radius: 10px;
+  background-color: #fac032;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Caveat', cursive;
+  padding: 6px;
+}
+
+#readMore:hover {
+  background-color: #f7b616;
+}

@@ -1,0 +1,41 @@
+@import "main.css";
+
+#event {
+  display: grid;
+  grid-template: auto auto auto auto / 30% 30%;
+  grid-gap: 1%;
+  justify-content: center;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+
+.events-pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 12px;
+  border: 1px solid #f7b616;
+  background-color: black;
+}
+
+.eventLink {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  font-family: 'Caveat', cursive;
+  text-decoration: none;
+  text-align: center;
+}
+
+hr {
+  width: 85%;
+}
+
+#eventName {
+  text-shadow: 1px 1px #FFCC4D;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
