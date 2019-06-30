@@ -1,56 +1,7 @@
 require 'sinatra'
 require 'httparty'
 require "./mailer.rb"
-
-class Muffin
-  attr_accessor :name, :description, :price, :img
-  def initialize(name, description, price, img)
-    @name = name
-    @description = description
-    @price = price
-    @img = img
-  end
-end
-
-class Cookie
-  attr_accessor :name, :description, :price, :img
-  def initialize(name, description, price, img)
-    @name = name
-    @description = description
-    @price = price
-    @img = img
-  end
-end
-
-class Cupcake
-  attr_accessor :name, :description, :price, :img
-  def initialize(name, description, price, img)
-    @name = name
-    @description = description
-    @price = price
-    @img = img
-  end
-end
-
-class Cake
-  attr_accessor :name, :description, :price, :img
-  def initialize(name, description, price, img)
-    @name = name
-    @description = description
-    @price = price
-    @img = img
-  end
-end
-
-class Crepe
-  attr_accessor :name, :description, :price, :img
-  def initialize(name, description, price, img)
-    @name = name
-    @description = description
-    @price = price
-    @img = img
-  end
-end
+require "./classes.rb"
 
 muffin1 = Muffin.new("Peanut Butter Nutella", "Savory Nutella Swirl with Creamy Peanut Butter ", "Price: $4.95", "https://www.somethingswanky.com/wp-content/uploads/2016/06/DSC_4179-620x936.jpg")
 muffin2 = Muffin.new("Blueberry & Cranberry", "Sweet Berries with Glazed Crumbs", "Price: $4.95", "https://tastykitchen.com/recipes/wp-content/uploads/sites/2/2012/02/Blueberry-and-Cranberry-Crumb-Muffin-410x615.jpg")
@@ -73,7 +24,6 @@ cupcake4 = Cupcake.new("Double Chocolate", "Chocolate Frosting & Sprinkles on Ch
 cupcake5 = Cupcake.new("Chai Latte", "Chai Buttercream and Spice on Vanilla", "Price: $3.95", "https://cdn.sallysbakingaddiction.com/wp-content/uploads/2018/09/chai-latte-cupcakes.jpg")
 cupcake6 = Cupcake.new("Dark Chocolate", "Peanut Butter Frosting on Chocolate", "Price: $3.95", "https://cdn.sallysbakingaddiction.com/wp-content/uploads/2017/09/dark-chocolate-cupcakes-peanut-butter-frosting.jpg")
 
-
 cake1 = Cake.new("White Chocolate Raspberry Cheesecake", "Cheesecake on Buttery Shortbread Cookie Crust", "Price: $59.95", "http://lifemadesimplebakes.com/wp-content/uploads/2016/02/White-Chocolate-Raspberry-Cheesecake-6.jpg")
 cake2 = Cake.new("Black Forest", "Chocolate Syrup Drizzle with Fresh Cherries", "Price: $59.95", "https://www.lifeloveandsugar.com/wp-content/uploads/2018/07/Black-Forest-Cake3.jpg")
 cake3 = Cake.new("Strawberry Shortcake", "Macerated Strawberries with Vanilla", "Price: $59.95", "http://www.glorioustreats.com/wp-content/uploads/2018/05/Best-Strawberry-Shortcake-C.jpg")
@@ -93,7 +43,6 @@ def send_email(recipient)
 end
 
 get "/" do
-  send_email(params[:email])
   redirect "/home"
 end
 
@@ -139,4 +88,9 @@ end
 
 get "/form" do
   erb :form
+end
+
+get "/thankyou" do
+  send_email(params[:email])
+  erb :thankyou
 end

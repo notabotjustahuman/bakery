@@ -1,9 +1,9 @@
-<div id="Cakes" class="tabcontent">
+<div class="tabcontent">
   <h1>Cakes</h1>
   <h2>Cloud-like bites of love!</h2>
     <section id="menu">
       <% for i in (0..5) do %>
-        <div class="menuItem">
+        <div>
           <h3><%= @cakes[i].name %></h3>
           <img class="food" src="<%= @cakes[i].img %>">
           <h4><%= @cakes[i].description %></h4>

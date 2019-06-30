@@ -1,11 +1,11 @@
-<h1>Join Baking Events!</h1>
-  <section>
+<h1>Join Baking Events</h1>
+<h2>Click on the Image to Register!</h2>
+  <section id="event">
     <% for i in (0..7) do %>
-      <div class="events">
-        <h5><%= @events[i]['name']['text'] %></h5>
-        <img class="events-pic" src="<%= @events[i]['logo']['original']['url'] %>">
-        <p><%= @events[i]['description']['text'] %></p>
-        <a class="eventLink" href="<%= @events[i]['url'] %>">Click For More Info</a>
+      <div>
+        <a href="<%= @events[i]['url'] %>" target="_blank"><img class="events-pic" src="<%= @events[i]['logo']['original']['url'] %>"></a>
+        <p><span id="eventName"><%= @events[i]['name']['text'] %> is about... </span><span id="more"><%= @events[i]['description']['text'] %></span></p>
+        <button id="readMore" onclick="displayInfo()">Read More</button>
         <hr>
       </div>
     <% end %>

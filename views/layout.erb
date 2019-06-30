@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Honey Heaven</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="https://dumielauxepices.net/sites/default/files/honey-clipart-emoji-641652-2912513.png" type="image" sizes="16x16">
     <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -16,21 +15,23 @@
   </head>
   <body>
     <div class="tablist" id='navbar'>
-      <a href="home"><button id="home" class="tablinks">Home</button></a>
-      <a href="muffins"><button id="muffins" class="tablinks">Muffins</button></a>
-      <a href="cookies"><button id="cookies"class="tablinks">Cookies</button></a>
-      <a href="cupcakes"><button id="cupcakes" class="tablinks">Cupcakes</button></a>
-      <a href="cakes"><button id="cakes"class="tablinks">Cakes</button></a>
-      <a href="crepes"><button id="crepes"class="tablinks">Crêpes</button></a>
-      <a href="events"><button id="events"class="tablinks">Events</button></a>
-      <a href="partners"><button id="partners"class="tablinks">Partners</button></a>
-      <a href="form"><button id="form"class="tablinks">form</button></a>
+      <a href="home"><button>Home</button></a>
+      <a href="muffins"><button>Muffins</button></a>
+      <a href="cookies"><button>Cookies</button></a>
+      <a href="cupcakes"><button>Cupcakes</button></a>
+      <a href="cakes"><button>Cakes</button></a>
+      <a href="crepes"><button>Crêpes</button></a>
+      <a href="events"><button>Events</button></a>
+      <a href="partners"><button>Partners</button></a>
+      <input id="email" type="image" src="envelope.png">
+      <form id="form" action="/thankyou" method="get">
+        <input type="text" name="email" placeholder="Enter email to subscribe"></input>
+        <input id="send" type="submit" value="Send"></input>
+      </form>
     </div>
     <div>
       <button onclick="toTopFunction()" id="topButton"</button>
     </div>
-
-
     <%= yield %>
   </body>
   <script src="main.js" charset="utf-8"></script>

@@ -70,7 +70,7 @@ p {
 #navbar {
   text-align: center;
   margin: 0 auto;
-  width: 80%;
+  width: 96%;
 }
 
 .tablist {
@@ -119,6 +119,7 @@ p {
   width: 50px;
   height: 50px;
   text-align: center;
+  outline: none;
   border: none;
   border-radius: 10px;
   position: fixed;
@@ -146,7 +147,7 @@ p {
   grid-template: 550px 550px / 305px 305px 305px;
   grid-gap: 3.5%;
   justify-content: center;
-  padding-bottom: 175px;
+  padding-bottom: 100px;
 }
 
 .food {
@@ -162,19 +163,126 @@ p {
   background-color: black;
 }
 
-.events {
-  display: block;
-  grid-template: auto auto auto auto auto / 500px;
-  grid-gap: 80px;
+#event {
+  display: grid;
+  grid-template: auto auto auto auto / 30% 30%;
+  grid-gap: 1%;
+  justify-content: center;
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 100px;
 }
 
 .events-pic {
   display: block;
-  width: 400px;
-  height: 400px;
   margin-left: auto;
   margin-right: auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 12px;
+  border: 1px solid #f7b616;
+  background-color: black;
+}
+
+.eventLink {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  font-family: 'Caveat', cursive;
+}
+
+hr {
+  width: 85%;
+}
+
+#more {
+  display: none;
+}
+
+#readMore {
+  border: none;
+  border-radius: 10px;
+  background-color: #fac032;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Caveat', cursive;
+  padding: 6px;
+}
+
+#readMore:hover {
+  background-color: #f7b616;
+}
+
+#eventName {
+  text-shadow: 1px 1px #FFCC4D;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#blurb {
+  display: block;
+  width: 78%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#email {
+  display: block;
+  padding-top: 8px;
+  padding-right: 10px;
+  float: right;
+  width: 50px;
+  height: 50px;
+  outline: none;
+}
+
+form {
+  display: block;
+  float: right;
+  margin-top: -30px;
+  border-radius: 3px;
+  transition-duration: 0.5s;
+}
+
+input[type=text] {
+  width: 165px;
+}
+
+input[type=text]:focus {
+  border: 2px solid black;
+}
+
+input:focus {
+  outline: 0;
+}
+
+#send {
+  font-family: 'Caveat', cursive;
+  font-size: 13px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+}
+
+#send:hover {
+  border: 2px solid black;
+}
+
+#partner {
+  display: grid;
+  grid-template: auto / 35% 35%;
+  justify-content: center;
+  grid-gap: 3%;
+}
+
+#partners-pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+  height: 250px;
   border-radius: 12px;
   border: 1px solid #f7b616;
   background-color: black;
