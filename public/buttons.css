@@ -9,7 +9,7 @@
 .tablist {
   overflow: hidden;
   border-radius: 22px;
-  border: 1px solid black;
+  border: 1.5px solid black;
   background-color: #FFCC4D;
 }
 
@@ -55,7 +55,7 @@
   height: 50px;
   text-align: center;
   outline: none;
-  border: none;
+  border: 2px solid black;
   border-radius: 10px;
   position: fixed;
   bottom: 35px;
@@ -74,6 +74,7 @@
 
 #topButton:hover {
   cursor: pointer;
+  border: 2px solid #F5900C;
   background-color: #333;
 }
 
@@ -84,7 +85,7 @@
 }
 
 #readMore {
-  border: none;
+  border: 2px solid #fac032;
   border-radius: 10px;
   background-color: #fac032;
   cursor: pointer;
@@ -95,5 +96,6 @@
 }
 
 #readMore:hover {
+  border: 2px solid black;
   background-color: #f7b616;
 }
