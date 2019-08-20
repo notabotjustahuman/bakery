@@ -6,15 +6,15 @@ ActionMailer::Base.view_paths = File.dirname(__FILE__)
 ActionMailer::Base.smtp_settings = {
   address:    "smtp.gmail.com",
   port:       "587",
-  user_name:  "billy.chen1206@gmail.com",
-  password:   "",
+  user_name:  "honeyheavenbakery@gmail.com",
+  password:   "HoneyHeaven123",
   authentication: :plain
 }
 
 class Newsletter < ActionMailer::Base
-  default from: "billy.chen1206@gmail.com"
+  default from: "from@example.com"
   def welcome(recipient)
-    @recipient = recipient
+    # @recipient = recipient
     mail(to: recipient,
       subject: "Welcome to Honey Heaven!")
   end
